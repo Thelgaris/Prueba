@@ -9,7 +9,7 @@ export const Register = () => {
 
   const createUser = async () => {
     const response = await fetch(
-      "https://3001-4geeksacade-reactflaskh-dkidu9ulpx1.ws-eu45.gitpod.io/?vscodeBrowserReqId=1652978511728",
+      "https://3001-4geeksacade-reactflaskh-dkidu9ulpx1.ws-eu45.gitpod.io/api/register",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -37,8 +37,6 @@ export const Register = () => {
             type="text"
             className="form-control"
             placeholder="Email"
-            aria-label="Email"
-            aria-describedby="basic-addon1"
             onChange={(e) => {
               setUserData({ ...userData, email: e.target.value });
             }}
